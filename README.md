@@ -1,5 +1,4 @@
-# LOADER: Learning to Orchestrate Diverse Execution Rollouts
-
+# On Time, Within Budget: Constraint-Driven Online Resource Allocation for Agentic Workflows
 ## Paper Status
 
 This repository is a compact NeurIPS submission backup for the main experimental pipeline. It contains the code needed to construct rollout-derived DAG pools and run the main simulation experiments. Generated experimental results, plotting scripts, analysis outputs, local caches, and machine-specific paths are intentionally excluded.
