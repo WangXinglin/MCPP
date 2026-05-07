@@ -1,0 +1,34 @@
+# Python caches / build outputs
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Virtual environments and local config
+.venv/
+venv/
+.env
+.env.*
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Large generated artifacts
+results/
+temp/
+pregenerated_dags/
+*.zip
+*.pdf
+
+# Generated job lists and logs
+jobs.sh
+jobs_list.txt
+jobs_list_remaining.txt
+orchestration_jobs.sh
+orchestration_jobs_list.txt
+*.log
