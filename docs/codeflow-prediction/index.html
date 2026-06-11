@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeFlow Prediction Demo</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Query selector">
+        <div class="brand-block">
+          <div class="brand">CodeFlow Prediction</div>
+          <div class="subtle">Choose a problem, then tune the run constraints.</div>
+        </div>
+
+        <label class="search-wrap">
+          <span>Search</span>
+          <input id="querySearch" type="search" placeholder="Problem id or title" autocomplete="off" />
+        </label>
+
+        <div id="queryList" class="query-list"></div>
+      </aside>
+
+      <main class="main">
+        <header class="page-header">
+          <div>
+            <p class="eyebrow">Static demo</p>
+            <h1>Budget and Deadline Predictor</h1>
+            <div class="model-strip" aria-label="Models used for prediction">
+              <span>Models</span>
+              <strong>Qwen 30B Instruct</strong>
+              <strong>Qwen 30B Thinking</strong>
+              <strong>Qwen 4B Instruct</strong>
+              <strong>Qwen 4B Thinking</strong>
+            </div>
+          </div>
+          <div id="dataBadge" class="data-badge">Loading data</div>
+        </header>
+
+        <section class="hero-panel" aria-live="polite">
+          <div class="problem-strip">
+            <div>
+              <span class="field-label">Selected query</span>
+              <h2 id="selectedTitle">Loading...</h2>
+            </div>
+            <div class="query-id-pill" id="selectedId">codeflow</div>
+          </div>
+
+          <div class="control-area">
+            <section class="sliders-card" aria-label="Prediction controls">
+              <div class="slider-block">
+                <div class="slider-head">
+                  <label for="budgetSlider">Budget</label>
+                  <output id="budgetValue" for="budgetSlider">$0.42</output>
+                </div>
+                <input id="budgetSlider" type="range" min="0" max="99" value="0" />
+                <div class="range-scale">
+                  <span id="budgetMin">$0.02</span>
+                  <span id="budgetMid">$0.63</span>
+                  <span id="budgetMax">$20.00</span>
+                </div>
+              </div>
+
+              <div class="slider-block">
+                <div class="slider-head">
+                  <label for="deadlineSlider">Deadline</label>
+                  <output id="deadlineValue" for="deadlineSlider">18 min</output>
+                </div>
+                <input id="deadlineSlider" type="range" min="0" max="99" value="0" />
+                <div class="range-scale">
+                  <span id="deadlineMin">30 sec</span>
+                  <span id="deadlineMid">16 min</span>
+                  <span id="deadlineMax">2 hr</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="success-card" aria-label="Prediction result">
+              <div class="success-label">Success rate</div>
+              <div id="successRate" class="success-rate">--</div>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./src/app.js?v=20260611-full-data" type="module"></script>
+  </body>
+</html>

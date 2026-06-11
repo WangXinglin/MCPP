@@ -32,6 +32,12 @@ This repository is a compact NeurIPS submission backup for the main experimental
     ├── merge_shards.py                          # Merges shard outputs
     └── requirements.txt                         # Python dependencies
 
+## Interactive Demo
+
+The CodeFlow budget/deadline prediction demo is available as a static GitHub
+Pages artifact under `docs/codeflow-prediction/`. It uses sanitized aggregate
+matrices only and does not include raw worker logs or private run metadata.
+
 ## Installation
 
 1. Create a Python environment. Python 3.10+ is recommended.
