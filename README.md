@@ -32,11 +32,22 @@ This repository is a compact NeurIPS submission backup for the main experimental
     ├── merge_shards.py                          # Merges shard outputs
     └── requirements.txt                         # Python dependencies
 
-## Interactive Demo
+## Interactive CodeFlow Prediction Demo
 
-The CodeFlow budget/deadline prediction demo is available as a static GitHub
-Pages artifact under `docs/codeflow-prediction/`. It uses sanitized aggregate
-matrices only and does not include raw worker logs or private run metadata.
+<p align="center">
+  <a href="https://wangxinglin.github.io/MCPP/codeflow-prediction/">
+    <img src="docs/codeflow-prediction/assets/preview.jpg" alt="CodeFlow budget and deadline prediction demo" width="900">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://wangxinglin.github.io/MCPP/codeflow-prediction/"><b>Launch the interactive demo</b></a>
+</p>
+
+The demo lets visitors choose a CodeFlow problem and adjust Budget and Deadline
+sliders to inspect the predicted success rate. It uses sanitized aggregate
+matrices for 462 CodeFlow problems and the four Qwen prediction models; raw
+worker logs, private run metadata, and machine-specific paths are not included.
 
 ## Installation
 
