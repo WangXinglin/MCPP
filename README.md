@@ -35,13 +35,15 @@ This repository is a compact NeurIPS submission backup for the main experimental
 ## Interactive CodeFlow Prediction Demo
 
 <p align="center">
-  <a href="https://wangxinglin.github.io/MCPP/codeflow-prediction/">
+  <a href="https://htmlpreview.github.io/?https://github.com/WangXinglin/MCPP/blob/main/docs/codeflow-prediction/index.html">
     <img src="docs/codeflow-prediction/assets/preview.jpg" alt="CodeFlow budget and deadline prediction demo" width="900">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://wangxinglin.github.io/MCPP/codeflow-prediction/"><b>Launch the interactive demo</b></a>
+  <a href="https://htmlpreview.github.io/?https://github.com/WangXinglin/MCPP/blob/main/docs/codeflow-prediction/index.html"><b>Launch the interactive demo</b></a>
+  <br>
+  <sub>GitHub Pages mirror: <a href="https://wangxinglin.github.io/MCPP/codeflow-prediction/">wangxinglin.github.io/MCPP/codeflow-prediction/</a></sub>
 </p>
 
 The demo lets visitors choose a CodeFlow problem and adjust Budget and Deadline
