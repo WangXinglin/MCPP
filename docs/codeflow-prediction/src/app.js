@@ -12,6 +12,7 @@ const state = {
 const els = {
   dataBadge: document.querySelector("#dataBadge"),
   querySearch: document.querySelector("#querySearch"),
+  queryCount: document.querySelector("#queryCount"),
   queryList: document.querySelector("#queryList"),
   selectedTitle: document.querySelector("#selectedTitle"),
   selectedId: document.querySelector("#selectedId"),
@@ -64,8 +65,9 @@ function filteredQueries() {
 }
 
 function renderQueryList() {
-  const visible = filteredQueries().slice(0, 80);
+  const visible = filteredQueries();
   els.queryList.innerHTML = "";
+  els.queryCount.textContent = `Showing ${visible.length} of ${state.queries.length} queries`;
 
   visible.forEach((query) => {
     const originalIndex = state.queries.findIndex((item) => item.query_id === query.query_id);

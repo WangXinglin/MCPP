@@ -73,6 +73,13 @@ input {
   color: var(--ink);
 }
 
+.query-count {
+  margin-top: -12px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .query-list {
   min-height: 0;
   overflow: auto;
